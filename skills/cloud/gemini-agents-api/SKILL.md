@@ -1,13 +1,13 @@
 ---
-name: gemini-agents-api
+name: gemini-managed-agents-api
 description: Manages custom Agent resources on Gemini Enterprise Agent Platform. Use when the user wants to programmatically create, configure, list, update, or delete stateful, server-managed Agent resources (including mounting files, skills, and tools) before executing conversations.
 ---
 
-# Gemini Enterprise Agent Platform - Agents API Skill
+# Gemini Enterprise Agent Platform - Managed Agents API Skill
 
 This skill provides complete instructions, REST request endpoints, and JSON payload structures to programmatically manage **custom Agent resources** on the Gemini Enterprise Agent Platform (Agent Platform).
 
-The **Agents API** forms the **Control Plane** of the platform. It allows developers to provision, retrieve, update, and delete tailored, stateful agent containers equipped with system instructions, sandboxed files, custom skill registries, and local/remote tools.
+The **Managed Agents API** forms the **Control Plane** of the platform. It allows developers to provision, retrieve, update, and delete tailored, stateful agent containers equipped with system instructions, sandboxed files, custom skill registries, and local/remote tools.
 ---
 
 ## 1. Authentication & Setup
@@ -26,7 +26,7 @@ export ACCESS_TOKEN=$(gcloud auth print-access-token)
 
 > [!IMPORTANT]
 > **API Location Support**:
-> The `LOCATION` environment variable must be set to a regional location where the Gemini Enterprise Agent Platform's **Agents API** is actively supported (e.g., `global`, or other available regional endpoints).
+> The `LOCATION` environment variable must be set to a regional location where the Gemini Enterprise Agent Platform's **Managed Agents API** is actively supported (e.g., `global`, or other available regional endpoints).
 
 
 ### 2. Endpoint URL
